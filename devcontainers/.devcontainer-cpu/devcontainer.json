@@ -1,0 +1,20 @@
+{
+    "name": "Gen AI Dev Container",
+    "image": "wilbur1240/gen-ai:cpu",
+    "settings": {
+      "terminal.integrated.defaultProfile.linux": "bash"
+    },
+    "extensions": [
+      "ms-python.python",
+      "ms-toolsai.jupyter",
+      "ms-vscode.cpptools",
+      "ms-azuretools.vscode-docker",
+      "tomoki1207.pdf",
+      "redhat.vscode-xml"
+    ],
+    "mounts": [
+      "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+    ],
+    "workspaceFolder": "/workspace",
+    "postCreateCommand": "pip install ipykernel"
+  }
