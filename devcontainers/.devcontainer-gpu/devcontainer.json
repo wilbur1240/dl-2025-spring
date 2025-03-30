@@ -1,6 +1,7 @@
 {
     "name": "Gen AI Dev Container",
     "image": "wilbur1240/gen-ai:gpu",
+    "runArgs": ["--gpus", "all"],
     "settings": {
       "terminal.integrated.defaultProfile.linux": "bash"
     },
